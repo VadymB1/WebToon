@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Manga Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Manga Titles</h2>
+        <ul>
+            <li onclick="loadManga('manga1')">Manga 1</li>
+            <li onclick="loadManga('manga2')">Manga 2</li>
+            <li onclick="loadManga('manga3')">Manga 3</li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <div id="header">
+            <h1 id="manga-title">Manga Reader</h1>
+        </div>
+        <div id="manga-viewer">
+            <div id="pages-container"></div>
+        </div>
+        <div id="navigation">
+            <button id="prev-chapter-btn" class="nav-button" onclick="prevChapter()">Previous Chapter</button>
+            <button id="next-chapter-btn" class="nav-button" onclick="nextChapter()">Next Chapter</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
